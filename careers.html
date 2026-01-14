@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCorp - Careers</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="logo"><img src="img/header-logo.png" alt="PharmaCorp Logo" height="20"> PharmaCorp</a>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="rnd.html">R&D</a>
+            <a href="about.html">About Us</a>
+            <a href="careers.html" class="active">Careers</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="careers-hero">
+            <img src="img/careers-team-collaboration.jpg" alt="Diverse team collaborating in a modern, brightly lit office environment." class="banner-image">
+            <h2>Join Our Team: Innovate, Grow, Impact</h2>
+            <p>We are looking for dedicated individuals to join our mission of health improvement.</p>
+        </section>
+
+        <section id="benefits">
+            <h3>Comprehensive Benefits (Table)</h3>
+            <figure>
+                <img src="img/careers-benefits-graphic.svg" alt="Graphic showing health, finance, and time-off symbols." width="200">
+                <figcaption>Invested in our people.</figcaption>
+            </figure>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Benefit Category</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>**Health Coverage**</td>
+                        <td>100% premium paid for employee and dependents.</td>
+                    </tr>
+                    <tr>
+                        <td>**Retirement**</td>
+                        <td>5% 401k match after 6 months of service.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="apply">
+            <h3>How to Apply (Ordered List)</h3>
+            <ol>
+                <li>Review the open positions listed below.</li>
+                <li>Complete the detailed online application form.</li>
+                <li>Attach your resume and cover letter (PDF format only).</li>
+                <li>You will receive a confirmation email within 24 hours.</li>
+            </ol>
+
+            <form action="#" method="POST" id="application-form">
+                <fieldset>
+                    <legend>Application Submission</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="fullname" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="role">Applying for Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="">-- Select Position --</option>
+                        <option value="RDA">Research Data Analyst</option>
+                        <option value="CQM">Clinical Quality Manager</option>
+                    </select>
+                    
+                    <label for="cover">Cover Letter (max 500 chars):</label>
+                    <textarea id="cover" name="coverletter" maxlength="500"></textarea>
+
+                    <label for="cv">Upload Resume (PDF only):</label>
+                    <input type="file" id="cv" name="cvfile" accept=".pdf" required>
+
+                    <button type="submit">Submit Application</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PharmaCorp. Equal Opportunity Employer.</p>
+    </footer>
+    <script src="js/nav.js"></script>
+</body>
+</html>

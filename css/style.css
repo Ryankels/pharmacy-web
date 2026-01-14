@@ -1,0 +1,242 @@
+/* Color Palette: #003366 (Deep Blue), #FFFFFF (White), #0055AA (Lighter Blue), #F4F4F4 (Light Grey BG) */
+
+/* General Reset and Font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4; /* Light grey background for professional look */
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- E. Styled Navbar (Top Navigation Bar) --- */
+.topnav {
+    background-color: #003366; /* Deep professional blue */
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #0055aa; /* Lighter blue on hover */
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #0055aa; /* Highlight active page */
+    color: white;
+    font-weight: bold;
+}
+
+.topnav .logo {
+    /* Logo / Company Name styling */
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 15px;
+    padding-top: 10px; /* Adjust for image */
+    padding-bottom: 10px;
+}
+
+.topnav .logo img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* --- General Content Styling --- */
+h1, h2, h3 {
+    color: #003366;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Tables and Lists */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #0055aa;
+    color: white;
+}
+
+ul, ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+/* --- TARGETED IMAGE STYLING ADDITIONS --- */
+
+/* 1. Navbar Logo Styling (header-logo.png) */
+.topnav .logo img {
+    height: 20px; /* Fixed small size */
+    width: auto;
+    border-radius: 0; /* Ensures it's sharp if needed */
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline;
+}
+
+/* 2. Banner/Hero Images (home-hero-lab.jpg, products-bottle-set.jpg, careers-team-collaboration.jpg) */
+/* The .banner-image class is already defined in your CSS. No changes needed here. */
+/* If you want all hero images to look consistent, ensure you apply class="banner-image" in your HTML. */
+
+/* 3. Small, Inline Icon Styling (products-icon-heart.svg) */
+#product-listing table img {
+    height: 18px; 
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 0;
+}
+
+/* 4. Founder Portrait Styling (about-founder-quote.jpg) */
+#history img {
+    /* Limit the width to prevent it from dominating the page */
+    max-width: 400px; 
+    margin: 20px auto; /* Center the image in the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle professional shadow */
+}
+
+/* 5. Benefits Graphic (careers-benefits-graphic.svg) */
+#benefits figure img {
+    margin: 10px auto; /* Center the graphic above the table */
+    max-width: 250px; /* Constraints the graphic to a functional size */
+    border-radius: 0;
+}
+
+/* 6. R&D Flowchart (rnd-pipeline-flowchart.png) */
+/* This image uses the standard responsive image rule (max-width: 100%) which is sufficient. */
+/* --- COMPREHENSIVE IMAGE STYLING FIXES --- */
+
+/* General Responsive Image Rule */
+img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    display: block; /* Default to block for flow control */
+}
+
+/* 1. Logo Fix (Too small) */
+.topnav .logo img {
+    height: 30px; /* Increased height for better visibility */
+    width: auto;
+    border-radius: 0;
+    vertical-align: middle;
+    margin-right: 5px;
+    display: inline;
+}
+
+/* 2. Hero/Lab Image Fix (home-hero-lab.jpg & rnd-scientists-microscope.jpg are too big) */
+/* Assuming these images are placed within a standard section or figure, we'll cap their width. */
+#hero figure img, 
+#pipeline figure img {
+    /* Limits image width to 100% of container, but not more than 900px */
+    max-width: 900px; 
+    width: 100%;
+    margin: 10px auto; /* Centers the image */
+}
+
+/* 3. Banner Image Fix (careers-team-collaboration.jpg doesn't fully appear) */
+/* The existing .banner-image class is correct, but we ensure it covers the area */
+.banner-image {
+    width: 100%;
+    height: 350px; /* Slightly increased height to ensure fullness */
+    object-fit: cover; /* ESSENTIAL: Ensures the image covers the entire 350px height without stretching */
+    margin-bottom: 20px;
+}
+
+/* 4. Flowchart Fix (rnd-pipeline-flowchart.png - Too big and obvious background) */
+#pipeline details img {
+    max-width: 800px; /* Constraint size */
+    background-color: white; /* Hides any transparent or imperfect edges */
+    padding: 15px; /* Adds breathing room around the chart */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 5. Benefits Graphic Fix (careers-benefits-graphic.svg) */
+#benefits figure img {
+    margin: 10px auto;
+    max-width: 250px; /* Constraints the graphic to a functional size */
+    border-radius: 0;
+}
+
+/* --- MISC STYLING (Kept for consistency) --- */
+
+/* Small, Inline Icon Styling (products-icon-heart.svg) */
+#product-listing table img {
+    height: 18px; 
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 0;
+}
+
+/* Founder Portrait Styling (about-founder-quote.jpg) */
+#history img {
+    max-width: 400px; 
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+    margin: 20px 0;
+    padding: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    padding: 10px 0;
+}

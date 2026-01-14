@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCorp - Products</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="logo"><img src="img/header-logo.png" alt="PharmaCorp Logo" height="20"> PharmaCorp</a>
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="rnd.html">R&D</a>
+            <a href="about.html">About Us</a>
+            <a href="careers.html">Careers</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-hero">
+            <img src="img/products-bottle-set.jpg" alt="Clean set of pharmaceutical bottles and packaging, symbolizing quality." class="banner-image">
+            <h2>Our Core Medications</h2>
+            <form id="product-search">
+                <label for="drug-name">Search by Therapeutic Area:</label>
+                <input list="areas" id="drug-name" name="drug-name" placeholder="e.g., Cardiology">
+                <datalist id="areas">
+                    <option value="Cardiology"></option>
+                    <option value="Neurology"></option>
+                    <option value="Immunology"></option>
+                </datalist>
+                <input type="submit" value="Filter Products">
+            </form>
+        </section>
+
+        <section id="product-listing">
+            <h3>Product Catalog</h3>
+            <table border="1">
+                <caption>Key Product Details and Indications</caption>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Therapeutic Area</th>
+                        <th>Status</th>
+                        <th>Primary Indication</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>**CardioRelief**</td>
+                        <td><img src="img/products-icon-heart.svg" alt="Heart icon" width="18"> Cardiology</td>
+                        <td>Approved</td>
+                        <td>Hypertension Management</td>
+                    </tr>
+                    <tr>
+                        <td>**NeuroFocus**</td>
+                        <td>Neurology</td>
+                        <td>Phase III</td>
+                        <td>Mild Cognitive Impairment</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>**CardioRelief** Dosage Instructions</h3>
+            <p>Always consult a physician before use. General guidelines:</p>
+            <ol>
+                <li>Take one **5mg** tablet in the morning with a full glass of water.</li>
+                <li>Do not crush or chew the tablet.</li>
+                <li>If a dose is missed, take it as soon as you remember, unless it is near the time of the next dose.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PharmaCorp. Disclaimer: Consult a medical professional for advice.</p>
+    </footer>
+    <script src="js/nav.js"></script>
+</body>
+</html>
